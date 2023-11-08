@@ -1,0 +1,1415 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Racing+Sans+One&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding : 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+
+.navbar {
+    background-color: #f6f6f6; /* Set the background color */
+    padding: 16px; /* Add some padding for spacing */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Align the text to the right */
+}
+
+
+.navbar li {
+    display: inline;
+    margin-right: 100px; /* Add spacing between navbar items */
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #DAA900;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    margin-right: 40px;
+}
+ 
+
+.navbar a:hover {
+    color: #DAA900; /* Change the text color on hover to your desired color (e.g., blue) */
+}
+
+.navbar .contact-button a {
+    background-color: #e0e0e0; /* Set the background color for the button */
+    color: #0033a1; /* Set the text color for the button */
+    padding: 5px 10px; /* Add padding to the button for spacing */
+    border-radius: 2px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Add a smooth background color transition on hover */
+    margin-left: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+
+
+/* Adjust the button appearance on hover */
+.navbar .contact-button a:hover {
+    background-color: #DAA900; /* Change the background color on hover */
+}
+
+.products-title{
+    margin-left: 80%;
+    color:#0033a1;
+    font-size: 26px;
+     font-family: 'Manrope', sans-serif; 
+     font-weight: 700;
+}
+
+
+.container {
+    position: relative;
+    height: 100vh;
+  }
+
+
+.logo-box img {
+    width: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 40px;
+    
+}
+
+
+.banner-text{
+    position:absolute;
+    top: 25%;
+    color: #fff;
+    padding: 20px;
+}
+
+.banner-text h4{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif; 
+}
+
+
+
+.text-container {
+    width: 50%;
+    margin:auto; 
+    text-align: left;
+   
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    padding-top: 16%; 
+    margin-left: 40px;
+   font-size: 17px;
+   color: #686868;
+   font-family: 'Manrope', sans-serif;
+   cursor: pointer;
+}
+
+.text p:hover {
+    color: #DAA900; /* Change the text color to red on hover */
+    text-decoration: none; /* Add an underline on hover */
+    transition:  0.8s ease; 
+}
+
+
+.grouped-h2{
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #0033a1; /* Change the text color to your preference */
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.3; /* Adjust the line height for proper spacing */
+    margin-left: 5px;
+    margin-top: 50px; /* Adjust the margin-top value to control the positioning */
+    transition: 0.3s ease;
+    font-family:'Manrope', sans-serif; 
+}
+
+.grouped-h2 a{
+    text-decoration: none;
+    color:#0033a1;
+    font-family:'Manrope', sans-serif; 
+}
+
+.grouped-h2 h2:hover {
+    background-color: #0033a1;
+    width: 50%;
+    color: #DAA900;
+    cursor: pointer; 
+}
+
+.image-container img{
+    height: 260px ;
+    margin-right: 0px;
+    padding: 0; /* Remove padding */
+    margin-left: 0px; /* Create space to the left by adjusting the margin */
+ }
+
+.image-container{
+    float: right;  
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.image-container {
+    font-size: 0; /* Remove white space between inline-block elements */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-overlay {
+    position: relative;
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+.image-overlay img {
+    height: 260px;
+    transition: transform 0.3s; /* Add a smooth transition for zoom effect */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text using transform */
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s; /* Smooth transition for the overlay */
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 51, 161, 0.7); /* Background color with transparency */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text inside the overlay */
+   font-family: 'Manrope', sans-serif;
+   
+}
+
+.image-overlay:hover .overlay-text {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.image-overlay:hover img {
+    transform: scale(1.2); /* Zoom in the image on hover */
+}
+
+.footer {
+    background-color: #f6f6f6;
+    color: #0033a1;
+    font-weight: 500;
+    padding: 16px 0;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left{
+    margin-left: 40px;
+    font-weight: 300;
+}
+
+.footer-right{
+    margin-right: 40px;
+}
+
+.footer a {
+    color:#0033a1;
+    text-decoration: none;
+    font-size: 14;
+}
+.footer span {
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block; 
+    font-weight: 500; 
+}
+
+#sidebar-left {
+    margin-top: 7%; /* You can adjust the value as needed */
+    margin-left: 40px;
+}
+
+#sidebar-left {
+    font-size: 20px; /* Set the font size to 16 pixels or adjust as needed */
+}
+
+#sidebar-left h1 {
+    font-weight: bold; /* Set the font weight to bold */
+    color: #0033a1; /* Set the text color to a desired color (e.g., dark gray) */
+    font-size: 40px;
+    font-weight: 800;
+    font-family:'Manrope', sans-serif;
+     
+}
+
+#sidebar-left .catTitle {
+    font-weight: 700; /* Set the font weight to normal for category titles */
+    color: #0033a1; /* Set the text color for category titles to a different color (e.g., light gray) */
+    font-size: 22px;
+    font-weight: 700;
+    font-family:'Manrope', sans-serif;
+}
+
+#k2ModuleBox121 ul li a {
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s; /* Add a smooth transition for color changes */
+    font-family:'Manrope', sans-serif;
+    
+   
+}
+
+#sidebar-left .catTitle:hover {
+    background-color: #0033a1;
+    color: #DAA900; /* Change the text color to a different color on hover (e.g., orange) */
+}
+
+
+#k2ModuleBox121 ul {
+    list-style: none; /* Remove bullets */
+}
+
+#breadcrumbs {
+    display: flex; /* Use flex display to horizontally center-align children */
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center-align children horizontally */
+    margin-top: -8%;
+    margin-right: 5%;
+    
+}
+
+.moduletable.breadcrumbs {
+    background-color: fff;
+    margin: -5px;
+    margin-left: -212px;
+    color:#686868; 
+    margin-top: -3%;
+}
+
+.moduletable.breadcrumbs a{
+    color:#686868;
+    text-decoration: none;
+   
+}
+
+.box-under-breadcrumbs, .second-box-under-breadcrumbs {
+    text-align: center; /* Center the text */
+    padding: 20px;
+    margin-top: 20px; /* Add space between the boxes */
+    width: 25%; /* Each box takes 100% width for vertical layout */
+    color: #fff;
+    margin: 5px;
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    margin-left: -28px;
+ 
+}
+
+.box-under-breadcrumbs a{
+    color:#fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.box-under-breadcrumbs a:hover {
+    color:#B47F00;
+}
+
+.second-box-under-breadcrumbs a:hover{
+    color:#B47F00;
+}
+
+.second-box-under-breadcrumbs a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#breadcrumbs .box-under-breadcrumbs h2,
+#breadcrumbs .second-box-under-breadcrumbs h2 {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.moduletable-other-products h2 {
+    color: #686868; /* Set the desired font color, e.g., red */
+}
+
+.box-under-products{
+    text-align: center; /* Center the text */
+    padding: 20px;
+    width: 20%; /* Each box takes 100% width for vertical layout */
+    color: #fff;
+    margin: 5px;
+    background: linear-gradient(to right, #B47F00 20%, #0033a1 20%);
+    background-size: 100% 100%; 
+    margin-left: 459px;
+    margin-top: -30px;
+    transition: 0.3s;
+}
+
+.box-under-products h2:hover{
+    color: #DAA900;
+}
+
+
+
+.box-under-products h2{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+
+
+.text-one h4{
+ margin-left: 455px;
+ margin-top: 5px;
+ font-size: 14px;
+ color:#686868;
+}
+
+.text-one p{
+    font-size: 12px;
+    margin-left: 455px;
+    margin-top: 5px;
+    color:#686868;
+}
+
+.text-two{
+    font-size: 14px;
+    margin-left: 455px;
+    margin-top: 5px;
+    color:#686868;
+    background-color: #e0e0e0;
+    width: 30%;
+}
+.text-span{
+    text-align: center;
+   margin-left: 200px;
+}
+
+.text-three{
+    font-size: 14px;
+    margin-left: 455px;
+    margin-top: 5px;
+    color:#686868;
+    width: 30%;
+}
+
+.text-one-span{
+   text-align: center;
+   margin-left: 252px;
+}
+
+.text-span-two{
+    margin-left: 128px;
+}
+
+.text-span-two-one{
+    margin-left: 122px;
+}
+
+.text-one-three{
+    margin-left: 188px;
+}
+
+.text-span-three{
+    margin-left: 162px;
+}
+
+.text-one-four{
+    margin-left: 235px;
+}
+
+.text-span-five{
+    margin-left: 228px;
+}
+
+.text-one-two{
+    margin-left: 329px;
+   
+}
+
+.text-two-three{
+    font-size: 14px;
+    margin-left: 455px;
+    margin-top: 5px;
+    color:#686868;
+    width: 30%; 
+}
+
+.text-span-six{
+    margin-left: 150px;
+}
+
+.text-span-two-two{
+    margin-left: 142px;
+}
+
+.text-one-seven{
+    margin-left: 252px; 
+}
+
+
+.inquire-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db0032;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Add a hover effect */
+    float: right;
+    margin-top: -28%;
+    width: 20%;
+    margin-right: 20px;
+    font-weight: 'Manrope', sans-serif;
+}
+
+.inquire-button:hover {
+    background-color: #DAA900; /* Change the background color on hover */
+}
+
+
+
+.modutable-breadcrumbs-two a{
+    color:#686868;
+    text-decoration: none;
+}  
+
+.modutable-breadcrumbs-two{
+    color:#686868;
+    margin-right: 250px;
+    margin-top: -55px;
+    
+}
+
+
+#breadcrumbs-two{
+    display: flex; /* Use flex display to horizontally center-align children */
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center-align children horizontally */
+    margin-top: -15%;
+    margin-right: 5%;
+}
+
+/*three*/
+
+#breadcrumbs-three{
+    display: flex; /* Use flex display to horizontally center-align children */
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center-align children horizontally */
+    margin-top: -8%;
+    margin-left: -27%;
+}
+
+.moduletable-breadcrumbs-three{
+    background-color: fff;
+    margin: -5px;
+    color:#686868; 
+    margin-top: -3%;
+    margin-left: -65px;
+}
+
+.moduletable-breadcrumbs-three a{
+    color:#686868;
+    text-decoration: none;
+}
+
+.box-under-breadcrumbs-three{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: -250px;
+    width: 20%;
+    padding: 20px;
+    color: #fff; 
+}
+
+.box-under-breadcrumbs-three h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-under-breadcrumbs-three a{
+    color:#fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.box-under-breadcrumbs-three a:hover{
+    color:#B47F00;
+}
+
+.box-under-breadcrumbs-three-another a:hover{
+    color:#B47F00;
+}
+
+.box-under-breadcrumbs-three-another-box a:hover{
+    color:#B47F00;
+}
+
+
+
+.box-under-breadcrumbs-three-another a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.box-under-breadcrumbs-three-another-box a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.box-under-breadcrumbs-three-another-box-last a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.box-under-breadcrumbs-three-another-box-last a:hover{
+    color:#B47F00;
+}
+
+
+.box-under-breadcrumbs-three-another{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    margin-top: -267px;
+    margin-left: 405px;
+    width: 20%;
+    padding: 20px;
+    color: #fff;  
+}
+
+.box-under-breadcrumbs-three-another h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-under-breadcrumbs-three-another-box{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: 405px;
+    width: 20%;
+    padding: 20px;
+    color: #fff;
+}
+
+.box-under-breadcrumbs-three-another-box h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.box-under-breadcrumbs-three-another-box-last{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    margin-top: -266px;
+    margin-right: 100px;
+     width: 20%;
+    padding: 20px;
+    color: #fff;
+}
+
+
+.box-under-breadcrumbs-three-another-box-last h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: -14px;
+}    
+
+.box-under-breadcrumbs-three-another-box-last{
+    background-color: #0033a1;
+    margin-top: -266px;
+    margin-left: 1097px;
+    width: 15%;
+    padding: 20px;
+    color: #fff;
+}
+
+.box-under-breadcrumbs-three-another-box-last h2{
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.moduletable-breadcrumbs-four{
+    margin-top: -9px;
+    margin-left: 99px;
+}
+
+.moduletable-breadcrumbs-four a{
+    text-decoration: none;
+    color:#686868;
+}
+
+.moduletable-breadcrumbs-four span{
+    color:#686868;
+}
+
+
+
+
+.box-under-breadcrumbs-three-another-box-not{
+    background-color: #0033a1;
+    margin-top: 210px;
+    margin-left: 450px;
+    width: 15%;
+    padding: 20px;
+    color: #fff; 
+}
+
+.box-under-breadcrumbs-three-another-box-not h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduletable-breadcrumbs-five{
+   color:#686868;
+}
+
+.moduletable-breadcrumbs-five a{
+    text-decoration: none;
+    color:#686868;
+}
+
+.moduletable-breadcrumbs-five{
+    margin-top: -20px;
+    margin-left: 100px;
+}
+
+.box-under-breadcrumbs-four{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    margin-top: 8px;
+    margin-left: -200px;
+    width: 20%;
+    padding: 20px;
+    color: #fff; 
+}
+
+.box-under-breadcrumbs-four h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box-under-breadcrumbs-four h2:hover{
+    color:#B47F00;
+}
+
+
+
+.box-under-breadcrumbs-four-one{
+    background-color: #0033a1;
+    margin-top: 8px;
+    margin-left: -280px;
+    width: 15%;
+    padding: 20px;
+    color: #fff; 
+}
+
+.box-under-breadcrumbs-four-one h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.box-under-breadcrumbs-four-two{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    width: 18%;
+    padding: 20px;
+    color: #fff;
+    margin-top: -595px;
+    margin-left: 379px;
+    
+}
+
+.box-under-breadcrumbs-four-two h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer; 
+}
+
+.box-under-breadcrumbs-four-two h2:hover{
+    color:#B47F00;
+}
+
+
+
+.box-under-breadcrumbs-four-three{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    width: 18%;
+    margin-left: 379px;
+    padding: 20px;
+    color: #fff;
+    margin-top: 8px;
+} 
+
+.box-under-breadcrumbs-four-three h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.box-under-breadcrumbs-four-three h2:hover{
+    color:#B47F00;
+}
+
+
+
+.box-under-breadcrumbs-four-four{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    width: 18%;
+    margin-left: 933px;
+    padding: 20px;
+    color: #fff;
+    margin-top: -595px;
+}
+
+
+.box-under-breadcrumbs-four-four h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box-under-breadcrumbs-four-four h2:hover{
+    color:#B47F00;
+}
+
+
+.box-under-breadcrumbs-four-five{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    width: 18%;
+    margin-left: 934px;
+    padding: 20px;
+    color: #fff;
+    margin-top:  8px;
+   
+}
+
+.box-under-breadcrumbs-four-five h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box-under-breadcrumbs-four-five h2:hover{
+    color:#B47F00;
+}
+
+
+
+
+
+.footer-one{
+    background-color: #f6f6f6;
+    color: #0033a1;
+    font-weight: 500;
+    padding: 16px 0;
+    align-items: center;
+    position: absolute;
+    bottom: -290px;
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.footer-left-one{
+    margin-left: 40px;
+    font-weight: 300;
+}
+
+.footer-right-one{
+    margin-right: 40px;
+}
+
+.footer-one a {
+    color:#0033a1;
+    text-decoration: none;
+    font-size: 14;
+}
+
+.footer-one span {
+    font-size: 14px;
+    font-weight: 300;
+    display: inline-block; 
+    font-weight: 500; 
+}
+
+
+
+.moduletable-breadcrumbs-zero{
+    margin-top: -9px;
+}
+
+.moduletable-breadcrumbs-zero a{
+    text-decoration: none;
+    color:#686868;
+}
+
+.moduletable-breadcrumbs-zero span{
+    color:#686868;
+}
+
+.box-under-breadcrumbs-three-another-box-last-lasts{
+    background: linear-gradient(to right, #B47F00 15%, #0033a1 15%);
+    background-size: 100% 100%;
+    width: 18%;
+    margin-right: 100px ;
+    margin-top: 10px;
+    margin-left: 1097px;
+    width: 15%;
+    padding: 20px;
+    color: #fff;
+}
+
+.box-under-breadcrumbs-three-another-box-last-lasts h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.box-under-breadcrumbs-three-another-box-last-lasts h2:hover{
+    color:#B47F00;
+}
+
+
+
+.new-box-three-three-seven-nine{
+    background: #B47F00; 
+    width: 20px; /* Takes 100% width, you can adjust as needed */
+    height: 35px;
+    position: absolute; /* Set the new box to absolute positioning */
+    top: 0; /* Place the box at the top */
+    left: 0; /* Place the box at the left */
+    padding: 12px;
+    color: #fff;
+    margin-left: 1036px;
+    margin-top: 317px; 
+}
+
+.box-under-breadcrumbs-four-two-three{
+    background-color: #0033a1;
+    margin-top: -327px;
+    margin-left: 379px;
+    width: 15%;
+    padding: 20px;
+    color: #fff;
+}
+
+.box-under-breadcrumbs-four-two-three h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.box-under-breadcrumbs-four-two-three h2:hover{
+    color:#B47F00;
+}
+
+
+
+.box-under-breadcrumbs-four-four-five{
+    background-color: #0033a1;
+    margin-top: -327px;
+    margin-left: 960px;
+    width: 15%;
+    padding: 20px;
+    color: #fff;
+}
+
+.box-under-breadcrumbs-four-four-five h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box-under-breadcrumbs-four-four-five h2:hover{
+    color:#B47F00;
+}
+
+.moduletable-breadcrumbs-zeroone{
+    margin-top: -9px;
+}
+
+.moduletable-breadcrumbs-zeroone a{
+    text-decoration: none;
+    color:#686868;
+}
+
+.moduletable-breadcrumbs-zeroone span{
+    color:#686868;
+}
+
+.box-under-breadcrumbs-ten{
+    
+    
+}
+
+.box-under-breadcrumbs-ten a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+
+.box-under-breadcrumbs-ten h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.box-one{
+    background: #B47F00; 
+    width: 20px; /* Takes 100% width, you can adjust as needed */
+    height: 33px;
+    position: absolute; /* Set the new box to absolute positioning */
+    top: 0; /* Place the box at the top */
+    left: 0; /* Place the box at the left */
+    padding: 12px;
+    color: #fff;
+    margin-left: 200px;
+    margin-top: 200px; 
+}
+
+.moduletable-breadcrumbs-zer{
+    margin-top: -9px;
+    margin-left: 75px;
+}
+
+
+.moduletable-breadcrumbs-zer a{
+    color:#686868;
+    text-decoration: none;
+}
+
+.moduletable-breadcrumbs-zer span{
+    color:#686868;
+}
+
+.new-box-three-three-seven-ten{
+    background: #B47F00; 
+    width: 20px; /* Takes 100% width, you can adjust as needed */
+    height: 35px;
+    position: absolute; /* Set the new box to absolute positioning */
+    top: 0; /* Place the box at the top */
+    left: 0; /* Place the box at the left */
+    padding: 12px;
+    color: #fff;
+    margin-left: 1036px;
+    margin-top: 386px; 
+}
+
+.new-box-three-three-seven-eleven{
+    background: #B47F00; 
+    width: 20px; /* Takes 100% width, you can adjust as needed */
+    height: 35px;
+    position: absolute; /* Set the new box to absolute positioning */
+    top: 0; /* Place the box at the top */
+    left: 0; /* Place the box at the left */
+    padding: 12px;
+    color: #fff;
+    margin-left: 1036px;
+    margin-top: 455px;
+}
+
+.moduletable-breadcrumbs-five-zer{
+    margin-top: -20px;
+    margin-left: 50px;
+}
+
+.moduletable-breadcrumbs-five-zer a{
+    text-decoration: none;
+    color:#686868;
+}
+
+.moduletable-breadcrumbs-five-zer span{
+    color:#686868;
+}
+
+.box-under-fuel{
+    background-color: #0033a1;
+    margin-top: -35px;
+    margin-left: 500px;
+    width: 15%;
+    padding: 20px;
+    color: #fff;
+}
+
+.box-under-fuel h2{
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+}
+
+.new-box-under-fuel{
+    background: #B47F00; 
+    width: 20px; /* Takes 100% width, you can adjust as needed */
+    height: 35px;
+    position: absolute; /* Set the new box to absolute positioning */
+    top: 0; /* Place the box at the top */
+    left: 0; /* Place the box at the left */
+    padding: 12px;
+    color: #fff;
+    margin-left: 456px;
+    margin-top:  145px;
+}
+
+
+/* Style the main content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0033a1;
+    box-shadow: 0 0 10px rgba(238, 226, 226, 0.1);
+}
+
+/* Style the "Get in Touch" section */
+#contact-form {
+    text-align: center;
+}
+
+h3 {
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #686868;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #db0032;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s
+}
+
+
+button:hover {
+    background-color: #DAA900; /* Change the background color when hovering */
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.desc-text h4{
+    color: #686868;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600px;
+    margin-left: 460px;
+    margin-top: 10px;
+}
+.desc-text p{
+    color: #686868;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600px;
+    margin-left: 460px;
+}
+
+.about-section img{
+    height: 500px;
+    float:right;
+    margin-right: 200px;
+    margin-top: 30px;
+}
+
+.about-text{
+    margin-left: 340px;
+    margin-top: 50px;
+    color: #686868;
+    font-family: 'Manrope', sans-serif;
+}
+
+.about-text h4{
+    font-size: 18px;
+}
+
+.about-text p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.team-image img{
+    width: 300px;
+    margin-top: 5px;
+    
+}
+
+.about-text a{
+    text-decoration: none;
+    color:#db0032;
+    font-family: 'Manrope', sans-serif;
+}
+
+.image-second{
+   margin-top: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
